@@ -1,16 +1,13 @@
 package main
 
-import (
-	"fmt"
-	"os"
-	"strconv"
-)
+import "fmt"
+
+
+func log(message string){
+	fmt.Println(message)
+}
 
 func main(){
-	no, err := strconv.Atoi(os.Args[1])
-	fmt.Println(no)
-	if err != nil {
-		fmt.Println(err)
-		fmt.Println("Couldn't convert: ")
-	}
+	log("hi")
+	log("there")
 }
